@@ -7,8 +7,13 @@ import {
     TopNavigation,
 } from '@atlaskit/page-layout'
 import Navigation from '../Navigation'
+import { StyledContainer } from './styles'
 
-export default function PageLayout() {
+export default function PageLayout({
+    children,
+}: {
+    children: React.ReactNode
+}) {
     const [showBanner] = useState(false)
 
     return (
@@ -35,7 +40,9 @@ export default function PageLayout() {
             </TopNavigation>
             <Content testId="content">
                 <Main testId="main" id="main" skipLinkTitle="Main Content">
-                    <span>Main content</span>
+                    <StyledContainer maxW="7xl" centerContent>
+                        {children}
+                    </StyledContainer>
                 </Main>
             </Content>
         </AtlassianPageLayout>
