@@ -33,7 +33,7 @@ export default function VerticalAscCard() {
 							alt="banner"
 							layout="fill"
 							src="/assets/phones.png"
-							objectFit="cover"
+							objectFit="contain"
 						/>
 					</Box>
 					<Box p="6">
