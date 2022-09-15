@@ -43,7 +43,7 @@ export default function VerticalDescCard() {
 							alt="banner"
 							layout="fill"
 							src="/assets/ipad_mini.png"
-							objectFit="cover"
+							objectFit="contain"
 						/>
 					</Box>
 				</StyledBoxVertical>
